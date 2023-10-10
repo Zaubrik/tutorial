@@ -1,6 +1,6 @@
 # tutorial
 
-A tutorial for Zaubrik's Web Components
+A tutorial for Zaubrik's [Web Components](https://web-components.zaubrik.de/)
 
 1. Install
    [deno](https://docs.deno.com/runtime/manual/getting_started/installation)
