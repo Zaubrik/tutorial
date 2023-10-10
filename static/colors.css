@@ -1,0 +1,31 @@
+html {
+  --color-1: #d73d6c;
+  --color-2: #d57276;
+  --color-3: #d6c2bc;
+  --color-4: #c0cccc;
+  --color-5: #65b2c6;
+  --color-6: #00bfff;
+  --color-6: #add8e6;
+  --color-6: #12C5F5;
+  --color-7: #0a2540;
+}
+
+html {
+  --textOnWhite: #425466;
+  --textWhite: #F8F8F8;
+  --textDarkBlue: #193148;
+  --titleDarkBlue: #0a2540;
+  --titleWhite: #fff;
+  --backgroundColorGrey: #f6f9fc;
+  --backgroundColorWhite: #fff;
+  --backgroundColorBlue: #65b2c6;
+  --backgroundColorRed: #d57276;
+  --accentColorRed: #d73d6c;
+  --accentColorBlue: var(--color-6);
+  --neutralRed: #d6c2bc;
+  --neutralBlue: #c0cccc;
+  --accentColorRedFilter: invert(36%) sepia(99%) saturate(2865%)
+    hue-rotate(320deg) brightness(90%) contrast(87%);
+  --accentColorBlueFilter: invert(36%) sepia(91%) saturate(2398%)
+    hue-rotate(173deg) brightness(100%) contrast(99%);
+}

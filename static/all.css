@@ -1,0 +1,16 @@
+@import url("https://dev.zaubrik.com/assets@v0.0.4/styles/base.css");
+@import url("https://dev.zaubrik.com/assets@v0.0.4/styles/anchor.css");
+@import url("https://dev.zaubrik.com/assets@v0.0.4/styles/card_shadow.css");
+
+basic-body * + * {
+  margin-top: var(--paragraphGap);
+}
+
+@media (min-width: 768px) {
+  shadow-image,
+  shadow-video {
+    padding-top: 8px;
+    /* --shadowVideoWidthXL: 100%; */
+    /* --shadowImageWidthXL: 100%; */
+  }
+}
