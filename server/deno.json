@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "test": "deno test --check --unstable --allow-all",
+    "serve": "deno run -A https://deno.land/std/http/file_server.ts --port 8888 ./"
+  },
+  "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable", "deno.ns"],
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "noImplicitOverride": true,
+    "checkJs": true
+  }
+}
