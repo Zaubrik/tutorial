@@ -1,0 +1,57 @@
+<flex-row>
+  <div>
+    <basic-header hero right-pad>
+      <h1 slot="title">Kontaktieren oder buchen Sie mich</h1>
+    </basic-header>
+    <basic-body right-pad>
+      <p>Ich kann Ihnen dabei helfen:</p>
+      <unordered-list
+        icon="https://dev.zaubrik.com/assets@v0.0.4/icons/solid/check-circle.svg"
+        ><li>
+          Beratung zu musikalischen Auftritten für besondere Anlässe wie
+          Hochzeiten, Geburtstage, Firmenevents und andere Feiern.
+        </li>
+        <li>
+          Unterstützung bei der Organisation von Live-Musik und
+          Bühnenproduktionen für Events und Veranstaltungen.
+        </li>
+        <li>
+          Hilfe bei der Auswahl von musikalischen Extras wie Soundanlagen,
+          Beleuchtung und Bühnendekorationen, um Ihr Event perfekt zu gestalten.
+        </li></unordered-list
+      >
+    </basic-body>
+  </div>
+  <div>
+    <nice-form><p>Ich melde mich sofort bei Ihnen zurück.</p></nice-form>
+  </div>
+</flex-row>
+<script type="module">
+  import { niceFormItems } from "/deps.js"
+  import { sendEmailUrl } from "/config.js"
+  const niceForm = document.querySelector("nice-form")
+  niceForm.resource = sendEmailUrl
+  niceForm.fetchOptions = {
+    submitMessage: "Vielen Dank für Ihre Nachricht!",
+    submitErrorMessage:
+      "Etwas ist schief gegangen! Bitte melden Sie das Problem bei support@zaubrik.de",
+  }
+  niceForm.items = [
+    niceFormItems.firstName,
+    niceFormItems.lastName,
+    niceFormItems.email,
+    niceFormItems.phone,
+    niceFormItems.address,
+    niceFormItems.company,
+    niceFormItems.message,
+    {
+      kind: "input",
+      label: "Datum",
+      id: "date",
+      attr: {
+        type: "date",
+      },
+    },
+  ]
+  niceForm.submit = [niceFormItems.submit]
+</script>

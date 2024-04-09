@@ -1,0 +1,23 @@
+@import url("/all.css");
+@import url("/colors.css");
+
+footer,
+universal-navbar,
+#form,
+section:nth-child(even) {
+  --backgroundColor: #fff;
+  --accentColor: var(--accentColorRed);
+  --accentColorFilter: var(--accentColorRedFilter);
+  --titleColor: var(--titleOnWhite);
+  --textColor: var(--textOnWhite);
+  --knockoutColor: var(--backgroundColor);
+}
+
+section:nth-child(odd) {
+  --backgroundColor: var(--backgroundColorWhite);
+  --accentColor: var(--accentColorRed);
+  --accentColorFilter: var(--accentColorRedFilter);
+  --titleColor: var(--titleOnLight);
+  --textColor: var(--textOnLight);
+  --knockoutColor: var(--backgroundColor);
+}

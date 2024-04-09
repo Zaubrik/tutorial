@@ -1,0 +1,31 @@
+<flex-row>
+  <div>
+    <basic-header hero right-pad>
+      <h1 slot="title">Musik, Natur und Feuer!</h1></basic-header
+    >
+    <basic-body right-pad>
+      <p>
+        Willkommen bei Andreas Hölter – dem Musiker für vielseitige
+        Klangerlebnisse. Mit Leidenschaft für Gesang, Gitarre, Bass, Percussion
+        und Westerngitarre beherrsche ich ein breites Repertoire. Von Rock und
+        Pop bis zu den Evergreens von Johnny Cash, Bob Dylan und CCR, entführe
+        ich Sie in eine Welt zeitloser Musik.
+      </p>
+    </basic-body>
+    <basic-footer>
+      <stylish-anchor has-arrow href="/kontakt/">Jetzt buchen</stylish-anchor>
+    </basic-footer>
+  </div>
+  <shadow-video
+    src="./videos/musik/20230717_163108.mp4"
+    alternate-src="./videos/musik/20230717_163108.mp4"
+    autoplay
+  ></shadow-video>
+  <script type="module">
+    const video = document
+      .querySelector("shadow-video")
+      .root.querySelector("video")
+    video.muted = true
+    video.play()
+  </script>
+</flex-row>

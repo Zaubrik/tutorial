@@ -1,0 +1,46 @@
+@import url("/all.css");
+@import url("/colors.css");
+
+universal-navbar,
+#inhalt,
+header {
+  --backgroundColor: var(--backgroundColorWhite);
+  --accentColor: var(--accentColorRed);
+  --accentColorFilter: var(--accentColorRedFilter);
+  --titleColor: var(--titleOnWhite);
+  --textColor: var(--textOnWhite);
+  --knockoutColor: var(--backgroundColor);
+  --knockoutColorFilter: var(--accentColorRedFilter);
+}
+
+#inhalt section-container {
+  padding-top: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 22px 0 20px;
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 0.83em 0;
+}
+
+h4 {
+  margin: 1.12em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+  color: var(--titleColor);
+}

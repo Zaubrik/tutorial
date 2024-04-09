@@ -1,0 +1,39 @@
+@import url("https://dev.zaubrik.com/assets@v0.0.6/styles/base.css");
+@import url("https://dev.zaubrik.com/assets@v0.0.6/styles/anchor.css");
+@import url("https://dev.zaubrik.com/assets@v0.0.6/styles/card_shadow.css");
+
+header {
+  padding-top: 48px;
+}
+
+universal-navbar {
+  /* background-color: var(--backgroundColor); */
+  color: var(--titleColor);
+}
+
+universal-navbar img {
+  height: 62px;
+}
+
+universal-footer img {
+  width: 48%;
+}
+
+basic-body * + * {
+  margin-top: var(--paragraphGap);
+}
+
+@media (min-width: 768px) {
+  shadow-image,
+  shadow-video {
+    padding-top: 8px;
+    /* --shadowVideoWidthXL: 100%; */
+    /* --shadowImageWidthXL: 100%; */
+    /* --shadowImageBorderRadius: 6px; */
+  }
+}
+
+nice-form {
+  padding: var(--columnPaddingNormal);
+  box-shadow: var(--cardShadow);
+}
