@@ -19,7 +19,7 @@ deno run -A https://deno.land/std/http/file_server.ts --port 8088 ./
 
 ## TypeScript
 
-- [Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+- [Basic Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
 - [Videos](https://www.youtube.com/@basarat/videos)
 
 ## Git
