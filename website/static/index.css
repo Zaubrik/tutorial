@@ -1,186 +1,53 @@
-@import url("./all.css");
-@import url("./colors.css");
+@import url("/styles/all.css");
 
-section:nth-child(odd) {
-  --backgroundColor: var(--backgroundColorLight);
-  --accentColor: var(--accentColorRed);
-  --accentColorFilter: var(--accentColorRedFilter);
-  --titleColor: var(--titleOnLight);
-  --textColor: var(--textOnLight);
-  --knockoutColor: var(--backgroundColor);
-}
-
-section:nth-child(even),
-#auftritte,
-#feuer-und-nacht,
-#testimonials {
-  --backgroundColor: var(--backgroundColorDark);
-  --accentColor: var(--accentColorBlue);
-  --accentColorFilter: var(--accentColorBlueFilter);
-  --titleColor: var(--titleWhite);
-  --textColor: var(--textWhite);
-  --textColor: var(--textWhite);
-  --knockoutColor: #2b292b;
-}
-
-universal-navbar,
+navbar,
 header,
-#ueber-mich {
-  --backgroundColor: var(--backgroundColorWhite);
-  --accentColor: var(--accentColorRed);
-  --accentColorFilter: var(--accentColorRedFilter);
-  --titleColor: var(--titleOnWhite);
-  --textColor: var(--textOnWhite);
-  --knockoutColor: var(--backgroundColor);
+footer,
+section:nth-child(odd) {
+  --backgroundColor: var(--invalid, #fff);
+  --accentColor: var(--invalid, #2b81c6);
+  --accentColorFilter: var(
+    --invalid,
+    invert(51%) sepia(15%) saturate(3925%) hue-rotate(178deg) brightness(82%)
+      contrast(86%)
+  );
+  --titleColor: var();
+  --textColor: var();
+  --knockoutColor: var(--invalid, #fff);
 }
 
-footer {
-  --backgroundColor: var(--backgroundColorGrey);
-  --accentColor: var(--accentColorBlue);
-  --accentColorFilter: var(--accentColorBlueFilter);
-  --titleColor: var(--titleOnWhite);
-  --textColor: var(--textOnWhite);
-  --textColor: #363430;
-  --knockoutColor: var(--backgroundColor);
-  --backgroundColor: transparent;
-  background: linear-gradient(
-    var(--color-6),
-    rgba(255, 0, 0, 0.8),
-    rgba(255, 0, 0, 0.85),
-    rgba(255, 0, 0, 0.9),
-    rgba(255, 0, 0, 0.98),
-    var(--color-7),
-    var(--color-7)
-  ) !important;
-}
-
-header {
-  --backgroundColor: var(--color-2);
-  --knockoutColor: #dcdae1;
-}
-@media (min-width: 768px) {
-  header shadow-video {
-    --backgroundColor: var(--color-1);
-  }
-}
-
-#musik {
-  --backgroundColor: var(--color-3);
-}
-#auftritte {
-  --backgroundColor: var(--color-3);
-}
-#feuer-und-natur {
-  --backgroundColor: var(--color-4);
-}
-
-universal-navbar {
-  --backgroundColor: var(--color-1);
-  --universalNavbarBackgroundColor: transparent !important;
-}
-
-#leistungen modal-window {
-  --modalWindowBodyMaxHeight: 90%;
-}
-
-#musik variant-detail [slot="icon"] {
-  height: 56px;
-  width: auto;
-  max-width: 80px;
-}
-
-#testimonials basic-header {
-  margin-bottom: 32px;
-}
-
-#testimonials testimonial-block {
-  --backgroundColor: transparent;
+section:nth-child(even) {
+  --backgroundColor: silver;
+  --accentColor: var(--invalid, #2b81c6);
+  --accentColorFilter: var(
+    --invalid,
+    invert(51%) sepia(15%) saturate(3925%) hue-rotate(178deg) brightness(82%)
+      contrast(86%)
+  );
+  --titleColor: var();
+  --textColor: var();
+  --knockoutColor: var(--invalid, #fff);
 }
 
 #ueber-mich {
   position: relative;
   z-index: 1;
-  --flexRowMarginTop: 20px;
-  --textColor: #313e4b;
 }
 
-html {
-  background: linear-gradient(
-    var(--color-1),
-    var(--color-2),
-    var(--color-3),
-    var(--color-4),
-    var(--color-5),
-    var(--color-6)
-  ) !important;
+#ueber-mich {
+  --backgroundColor: var(--invalid, #f6f9fc);
 }
 
-section,
-header,
-section-container {
-  background-color: transparent !important;
+footer {
+  --backgroundColor: #f6f9fc;
 }
 
-section-container::part(background) {
-  background-color: transparent !important;
-  border: clamp(15px, 1.8vw, 30px) solid;
-  border-image-slice: 1;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-  border-image-source: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.1)
-  );
+@media (max-width: 767px) {
+  #ueber-mich flex-row *:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 
-#ueber-mich section-container::part(background) {
-  border-image-source: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.05)
-  );
-}
-
-#feuer-und-natur section-container::part(background) {
-  border-image-source: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.1),
-    rgba(255, 0, 0, 0.15)
-  );
-}
-
-#testimonials section-container::part(background) {
-  border-image-source: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.1),
-    rgba(255, 0, 0, 0.22)
-  );
-}
-
-#schluss section-container::part(background) {
-  border-image-source: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgba(255, 0, 0, 0.25)
-  );
-}
-
-#hero section-container::part(background),
-footer section-container::part(background) {
-  border: 0;
-}
-
-shadow-video,
-shadow-image {
-  --shadowVideoBorderRadius: 4px;
-  --shadowImageBorderRadius: 4px;
-}
-
-universal-footer::part(itemCopyright) {
-  color: var(--textColor);
+#rezensionen basic-header {
+  margin-bottom: 32px;
 }

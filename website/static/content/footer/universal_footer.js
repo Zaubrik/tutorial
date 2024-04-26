@@ -12,14 +12,21 @@ footer.items = [
     "Leistungen",
     [
       [
-        "Musik",
-        "/#musik",
+        "Erste Leistung",
+        "/#leistungen",
       ],
       [
-        "Auftritte",
-        "/#auftritte",
+        "Zweite Leistung",
+        "/#leistungen",
       ],
-      ["Feuer und Natur", "/#feuer-und-natur"],
+      [
+        "Dritte Leistung",
+        "/#leistungen",
+      ],
+      [
+        "Vierte Leistung",
+        "/#leistungen",
+      ],
     ],
   ],
   [

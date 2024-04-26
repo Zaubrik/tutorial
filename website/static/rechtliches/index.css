@@ -1,16 +1,23 @@
-@import url("/all.css");
-@import url("/colors.css");
+@import url("/styles/all.css");
 
 universal-navbar,
-#inhalt,
-header {
-  --backgroundColor: var(--backgroundColorWhite);
-  --accentColor: var(--accentColorRed);
-  --accentColorFilter: var(--accentColorRedFilter);
-  --titleColor: var(--titleOnWhite);
-  --textColor: var(--textOnWhite);
-  --knockoutColor: var(--backgroundColor);
-  --knockoutColorFilter: var(--accentColorRedFilter);
+header,
+footer,
+#inhalt {
+  --backgroundColor: var(--invalid, #fff);
+  --accentColor: var(--invalid, #2b81c6);
+  --accentColorFilter: var(
+    --invalid,
+    invert(51%) sepia(15%) saturate(3925%) hue-rotate(178deg) brightness(82%)
+      contrast(86%)
+  );
+  --titleColor: var();
+  --textColor: var();
+  --knockoutColor: var(--invalid, #fff);
+}
+
+footer {
+  --backgroundColor: #f6f9fc;
 }
 
 #inhalt section-container {

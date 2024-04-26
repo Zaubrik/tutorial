@@ -9,14 +9,14 @@ navbar.navPrimaryAnchors = [
     "/#ueber-mich",
   ],
   [
-    "Musik",
-    "/#musik",
+    "Leistungen",
+    "/#leistungen",
   ],
   [
-    "Auftritte",
-    "/#auftritte",
+    "Rezensionen",
+    "/#rezensionen",
   ],
-  ["Feuer und Natur", "/#feuer-und-natur"],
+  ["Schluss", "/#schluss"],
 ];
 navbar.navSecondaryAnchors = null;
 navbar.navPrimaryButtons = null;
@@ -34,14 +34,24 @@ navbar.mobileItems = [
     "Leistungen",
     [
       [
-        "Musik",
-        "https://dev.zaubrik.com/assets@v0.0.4/icons/outline/musical-note.svg",
-        "/#musik",
+        "Erste Leistung",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
+        "/#leistungen",
       ],
       [
-        "Auftritte",
-        "https://dev.zaubrik.com/assets@v0.0.4/icons/outline/star.svg",
-        "/#auftritte",
+        "Zweite Leistung",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
+        "/#leistungen",
+      ],
+      [
+        "Dritte Leistung",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
+        "/#leistungen",
+      ],
+      [
+        "Vierte Leistung",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
+        "/#leistungen",
       ],
     ],
   ],
@@ -50,13 +60,18 @@ navbar.mobileItems = [
     [
       [
         "Über mich",
-        "https://dev.zaubrik.com/assets@v0.0.4/icons/outline/user-circle.svg",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
         "/#ueber-mich",
       ],
       [
-        "Feuer und Natur",
-        "https://dev.zaubrik.com/assets@v0.0.4/icons/outline/fire.svg",
-        "/#feuer-und-natur",
+        "Rezensionen",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
+        "/#rezensionen",
+      ],
+      [
+        "Schluss",
+        "https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/outline/squares-plus.svg",
+        "/#schluss",
       ],
     ],
   ],

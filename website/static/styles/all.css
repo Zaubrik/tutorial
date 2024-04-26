@@ -1,0 +1,55 @@
+@import url("https://dev.zaubrik.com/assets@v0.1.0/styles/base.css");
+@import url("https://dev.zaubrik.com/assets@v0.1.0/styles/anchor.css");
+@import url("https://dev.zaubrik.com/assets@v0.1.0/styles/card_shadow.css");
+@import url("https://dev.zaubrik.com/assets@v0.1.0/styles/util.css");
+@import url("./colors.css");
+
+header {
+  padding-top: 48px;
+}
+
+universal-navbar {
+  --navMobileBackgroundColor: var(--accentColor);
+  --navMobileColorAll: var(--knockoutColor);
+  color: var(--titleColor);
+}
+
+@media (max-width: 1023px) {
+  universal-navbar {
+    --navPrimaryAnchorsAndButtonsPadding: 18px 15px;
+  }
+}
+
+@media (max-width: 839px) {
+  universal-navbar {
+    --navPrimaryAnchorsAndButtonsPadding: 18px 8px;
+  }
+}
+
+universal-navbar img {
+  height: 39px;
+  padding: 11px 0px;
+}
+
+universal-footer img {
+  width: 48%;
+}
+
+basic-body * + * {
+  margin-top: var(--paragraphGap);
+}
+
+@media (min-width: 768px) {
+  shadow-image,
+  shadow-video {
+    padding-top: 8px;
+    /* --shadowVideoWidthXL: 100%; */
+    /* --shadowImageWidthXL: 100%; */
+    /* --shadowImageBorderRadius: 6px; */
+  }
+}
+
+nice-form {
+  padding: var(--columnPaddingNormal);
+  box-shadow: var(--cardShadow);
+}

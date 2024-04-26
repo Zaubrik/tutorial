@@ -1,0 +1,14 @@
+html {
+  --color-1: #fffdff;
+  --color-2: #b3b1be;
+  --color-3: #444244;
+  --color-4: #343234;
+  --color-5: #151413;
+  --color-6: #0f1011;
+  --color-7: #ff0000;
+  --color-7-filter: invert(12%) sepia(84%) saturate(7341%) hue-rotate(11deg)
+    brightness(98%) contrast(121%);
+}
+
+html {
+}

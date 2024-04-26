@@ -1,23 +1,49 @@
-@import url("/all.css");
-@import url("/colors.css");
+@import url("/styles/all.css");
+
+html {
+  background-color: var(--invalid, #f6f9fc);
+}
 
 footer,
 universal-navbar,
+header,
 #form,
 section:nth-child(even) {
-  --backgroundColor: #fff;
-  --accentColor: var(--accentColorRed);
-  --accentColorFilter: var(--accentColorRedFilter);
-  --titleColor: var(--titleOnWhite);
-  --textColor: var(--textOnWhite);
-  --knockoutColor: var(--backgroundColor);
+  --backgroundColor: var(--invalid, #fff);
+  --accentColor: var(--invalid, #2b81c6);
+  --accentColorFilter: var(
+    --invalid,
+    invert(51%) sepia(15%) saturate(3925%) hue-rotate(178deg) brightness(82%)
+      contrast(86%)
+  );
+  --titleColor: var();
+  --textColor: var();
+  --knockoutColor: var(--invalid, #fff);
 }
 
 section:nth-child(odd) {
-  --backgroundColor: var(--backgroundColorWhite);
-  --accentColor: var(--accentColorRed);
-  --accentColorFilter: var(--accentColorRedFilter);
-  --titleColor: var(--titleOnLight);
-  --textColor: var(--textOnLight);
-  --knockoutColor: var(--backgroundColor);
+  --backgroundColor: silver;
+  --accentColor: var(--invalid, #2b81c6);
+  --accentColorFilter: var(
+    --invalid,
+    invert(51%) sepia(15%) saturate(3925%) hue-rotate(178deg) brightness(82%)
+      contrast(86%)
+  );
+  --titleColor: var();
+  --textColor: var();
+  --knockoutColor: var(--invalid, #fff);
+}
+
+footer {
+  --backgroundColor: var(--invalid, #f6f9fc);
+}
+
+@media (min-width: 768px) {
+  shadow-image,
+  shadow-video {
+    padding-top: 8px;
+    --shadowVideoWidthXL: 100%;
+    --shadowImageWidthXL: 100%;
+    --shadowImageBorderRadius: 6px;
+  }
 }
