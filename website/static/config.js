@@ -6,10 +6,12 @@ const membersHostname = isProduction
   ? "members.zaubrik.de"
   : "members.localhost";
 const membersPort = isProduction ? "" : ":8080";
-export const membersUrl = `${protocol}//${membersHostname}${membersPort}`;
-
-export const sendEmailUrlWithoutParams = membersUrl +
-  "/user/email/receive/kraftcoaching.net-7d4fbef6be75";
+const membersUrl = `${protocol}//${membersHostname}${membersPort}`;
+const sendEmailUrlWithoutParams = membersUrl +
+  "/email/receive/zaubrik.de-01HVP25QMDDEBK9ST28WQF8S5F";
 export const sendEmailUrl = appendSearchParams(sendEmailUrlWithoutParams)({
   subject: `${window.location.host}: ${window.location.pathname}`,
 });
+export const defaultFormSuccessMessage = "Vielen Dank für Ihre Nachricht!";
+export const defaultFormErrorMessage =
+  "Etwas ist schief gelaufen! Bitte melden Sie das Problem bei support@zaubrik.de.";

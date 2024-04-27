@@ -6,7 +6,7 @@
     <basic-body right-pad>
       <p>Ich kann Ihnen dabei helfen:</p>
       <unordered-list
-        icon="https://dev.zaubrik.com/assets@v0.1.0/icons/solid/check-circle.svg">
+        icon="https://dev.zaubrik.com/assets@v0.1.0/icons/heroicons/solid/check-circle.svg">
         <li>
           Beratung zu musikalischen Auftritten für besondere Anlässe wie
           Hochzeiten, Geburtstage, Firmenevents und andere Feiern.
@@ -28,13 +28,16 @@
 </flex-row>
 <script type="module">
   import { niceFormItems } from "/deps.js"
-  import { sendEmailUrl } from "/config.js"
+  import {
+    sendEmailUrl,
+    defaultFormSuccessMessage,
+    defaultFormErrorMessage,
+  } from "/config.js"
   const niceForm = document.querySelector("nice-form")
   niceForm.resource = sendEmailUrl
   niceForm.fetchOptions = {
-    submitMessage: "Vielen Dank für Ihre Nachricht!",
-    submitErrorMessage:
-      "Etwas ist schief gegangen! Bitte melden Sie das Problem bei support@zaubrik.de",
+    submitMessage: defaultFormSuccessMessage,
+    submitErrorMessage: defaultFormErrorMessage,
   }
   niceForm.items = [
     niceFormItems.firstName,
