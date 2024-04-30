@@ -21,7 +21,7 @@ section:nth-child(even) {
 #ueber-mich {
   position: relative;
   z-index: 1;
-  --backgroundColor: var(--invalid, #f6f9fc);
+  --backgroundColor: var(--invalid, var(--backgroundColorGrey));
 }
 
 @media (max-width: 767px) {

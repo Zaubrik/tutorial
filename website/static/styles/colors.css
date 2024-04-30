@@ -1,5 +1,6 @@
 html {
-  --color-1: #fffdff;
+  --color-0: #ffffff;
+  --color-1: #f6f9fc;
   --color-2: #b3b1be;
   --color-3: #444244;
   --color-4: #343234;
@@ -14,4 +15,5 @@ html {
 }
 
 html {
+  --backgroundColorGrey: var(--color-1);
 }
