@@ -4,6 +4,21 @@
 @import url("https://dev.zaubrik.com/assets@v0.1.0/styles/util.css");
 @import url("./colors.css");
 
+html {
+  background-color: var(--backgroundColorGrey);
+}
+
+universal-navbar,
+header,
+footer {
+  --backgroundColor: var(--invalid, #fff);
+  --accentColor: var(--invalid, #2b81c6);
+  --accentColorFilter: var(--invalid, var(--color-8-filter));
+  --titleColor: var();
+  --textColor: var();
+  --knockoutColor: var(--invalid, #fff);
+}
+
 header {
   padding-top: 48px;
 }

@@ -2,11 +2,7 @@ import { appendSearchParams } from "./deps.js";
 
 export const isProduction = window.location.hostname !== "localhost";
 const protocol = isProduction ? "https:" : "http:";
-const membersHostname = isProduction
-  ? "members.zaubrik.de"
-  : "members.localhost";
-const membersPort = isProduction ? "" : ":8080";
-const membersUrl = `${protocol}//${membersHostname}${membersPort}`;
+const membersUrl = `https://members.zaubrik.de`;
 const sendEmailUrlWithoutParams = membersUrl +
   "/email/receive/zaubrik.de-01HVP25QMDDEBK9ST28WQF8S5F";
 export const sendEmailUrl = appendSearchParams(sendEmailUrlWithoutParams)({

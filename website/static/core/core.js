@@ -1,4 +1,8 @@
-import { appendHtmlResource, ensureIdScrolling } from "/deps.js";
+import {
+  appendHtmlResource,
+  ensureIdScrolling,
+  setFooterColorByPreviousSection,
+} from "/deps.js";
 
 window.addEventListener("load", ensureIdScrolling());
 
@@ -8,8 +12,9 @@ const coreResources = [{
   parentSelector: "navbar",
 }, {
   url: "/core/html/footer.html",
-  selector: "#footer",
-  parentSelector: "body",
+  selector: "universal-footer",
+  parentSelector: "body > footer",
 }];
 
 appendHtmlResource(coreResources);
+setFooterColorByPreviousSection(["#f6f9fc", "#ffffff"]);

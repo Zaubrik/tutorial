@@ -5,9 +5,12 @@ html {
   --color-4: #343234;
   --color-5: #151413;
   --color-6: #0f1011;
-  --color-7: #ff0000;
-  --color-7-filter: invert(12%) sepia(84%) saturate(7341%) hue-rotate(11deg)
-    brightness(98%) contrast(121%);
+  --color-7: #ed656e;
+  --color-7-filter: invert(47%) sepia(43%) saturate(720%) hue-rotate(307deg)
+    brightness(101%) contrast(95%);
+  --color-8: #2b81c6;
+  --color-8-filter: invert(51%) sepia(15%) saturate(3925%) hue-rotate(178deg)
+    brightness(82%) contrast(86%);
 }
 
 html {

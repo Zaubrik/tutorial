@@ -1,4 +1,3 @@
-// import "./pouch/components/mod.js";
 import "https://dev.zaubrik.com/pouch@v0.2.0/components/mod.js";
 export * from "https://dev.zaubrik.com/pouch@v0.2.0/items/mod.js";
 export * from "https://dev.zaubrik.com/pouch@v0.2.0/functions/mod.js";
