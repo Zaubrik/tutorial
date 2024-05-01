@@ -28,18 +28,8 @@
 </flex-row>
 <script type="module">
   import { niceFormItems } from "/deps.js"
-  import {
-    sendEmailUrl,
-    defaultFormSuccessMessage,
-    defaultFormErrorMessage,
-  } from "/config.js"
-  const niceForm = document.querySelector("nice-form")
-  niceForm.resource = sendEmailUrl
-  niceForm.fetchOptions = {
-    submitMessage: defaultFormSuccessMessage,
-    submitErrorMessage: defaultFormErrorMessage,
-  }
-  niceForm.items = [
+  import { createForm } from "/core/form.js"
+  createForm([
     niceFormItems.firstName,
     niceFormItems.lastName,
     niceFormItems.email,
@@ -47,14 +37,6 @@
     niceFormItems.address,
     niceFormItems.company,
     niceFormItems.message,
-    {
-      kind: "input",
-      label: "Datum",
-      id: "date",
-      attr: {
-        type: "date",
-      },
-    },
-  ]
-  niceForm.submit = [niceFormItems.submit]
+    niceFormItems.dateTime,
+  ])
 </script>
