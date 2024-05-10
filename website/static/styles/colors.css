@@ -16,4 +16,16 @@ html {
 
 html {
   --backgroundColorGrey: var(--color-1);
+  --backgroundColorLight: var(--color-0);
+  --accentColorLight: var(--color-8);
+  --accentColorFilterLight: var(--color-8-filter);
+  --titleColorLight: var(--color-4);
+  --textColorLight: var(--color-3);
+  --knockoutColorLight: var(--backgroundColorLight);
+  --backgroundColorDark: var(--color-3);
+  --accentColorDark: var(--color-7);
+  --accentColorFilterDark: var(--color-7-filter);
+  --titleColorDark: var(--color-0);
+  --textColorDark: var(--color-1);
+  --knockoutColorDark: var(--backgroundColorDark);
 }

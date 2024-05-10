@@ -1,21 +1,21 @@
 @import url("/styles/all.css");
 
 section:nth-child(odd) {
-  --backgroundColor: var(--invalid, #fff);
-  --accentColor: var(--invalid, #2b81c6);
-  --accentColorFilter: var(--invalid, var(--color-8-filter));
-  --titleColor: var();
-  --textColor: var();
-  --knockoutColor: var(--invalid, #fff);
+  --backgroundColor: var(--backgroundColorLight);
+  --accentColor: var(--accentColorLight);
+  --accentColorFilter: var(--accentColorFilterLight);
+  --titleColor: var(--titleColorLight);
+  --textColor: var(--textColorLight);
+  --knockoutColor: var(--knockoutColorLight);
 }
 
 section:nth-child(even) {
-  --backgroundColor: silver;
-  --accentColor: var(--invalid, #2b81c6);
-  --accentColorFilter: var(--invalid, var(--color-8-filter));
-  --titleColor: var();
-  --textColor: var();
-  --knockoutColor: var(--invalid, #fff);
+  --backgroundColor: var(--backgroundColorDark);
+  --accentColor: var(--accentColorDark);
+  --accentColorFilter: var(--accentColorFilterDark);
+  --titleColor: var(--titleColorDark);
+  --textColor: var(--textColorDark);
+  --knockoutColor: var(--knockoutColorDark);
 }
 
 #ueber-mich {

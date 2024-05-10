@@ -8,15 +8,15 @@ html {
   background-color: var(--backgroundColorGrey);
 }
 
-universal-navbar,
+navbar,
 header,
 footer {
-  --backgroundColor: var(--invalid, #fff);
-  --accentColor: var(--invalid, #2b81c6);
-  --accentColorFilter: var(--invalid, var(--color-8-filter));
-  --titleColor: var();
-  --textColor: var();
-  --knockoutColor: var(--invalid, #fff);
+  --backgroundColor: var(--backgroundColorLight);
+  --accentColor: var(--accentColorLight);
+  --accentColorFilter: var(--accentColorFilterLight);
+  --titleColor: var(--titleColorLight);
+  --textColor: var(--textColorLight);
+  --knockoutColor: var(--knockoutColorLight);
 }
 
 header {
