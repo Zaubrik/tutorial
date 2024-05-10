@@ -7,7 +7,7 @@ import {
 const coreResources = [{
   url: "/core/html/navbar.html",
   selector: "universal-navbar",
-  parentSelector: "navbar",
+  parentSelector: "nav",
 }, {
   url: "/core/html/footer.html",
   selector: "#footer",
