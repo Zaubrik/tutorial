@@ -6,12 +6,10 @@ import {
 
 const coreResources = [{
   url: "/core/html/navbar.html",
-  selector: "universal-navbar",
   parentSelector: "nav",
 }, {
   url: "/core/html/footer.html",
-  selector: "#footer",
-  parentSelector: "body",
+  parentSelector: "body > footer",
 }];
 
 appendHtmlResource(coreResources);

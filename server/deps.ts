@@ -40,7 +40,7 @@ export {
   type Methods,
   type Options,
   respondWithAuth,
-} from "https://dev.zaubrik.com/schicksal@v0.1.2/server/response.ts";
+} from "https://dev.zaubrik.com/schicksal@v0.1.4/server/response.ts";
 export {
   isArray,
   isObject,
